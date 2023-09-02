@@ -23,6 +23,40 @@ export default function Navbar() {
           </button>
         </form>
       </nav>
+      <div className="form-popup" id="myForm">
+        <form action="AddTask." className="form-container">
+          <h2 style="text-align: center;">Add Task</h2>
+          <label forHtml="title">
+            <b>Title</b>
+          </label>
+          <input type="text" placeholder="Enter Title" name="title" required />
+          <label forHtml="Description">
+            <b>Description</b>
+          </label>
+          <input
+            type="password"
+            placeholder="Enter Description"
+            name="detail"
+            required
+          />
+          <label forName="Validity">
+            <b>Valid Till</b>
+          </label>
+          &nbsp;&nbsp;
+          <input
+            type="date"
+            placeholder="Enter Date"
+            name="validity"
+            required
+          />
+          <button type="submit" className="btn">
+            Add
+          </button>
+          <button type="button" className="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
     </>
   );
 }
