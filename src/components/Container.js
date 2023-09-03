@@ -1,7 +1,6 @@
 import * as React from 'react';
-import './style.css';
 
-export default function Container() {
+export default function Content() {
   const openForm = () => {
     // document.getElementById('myForm').style.display='block';
   };
