@@ -1,6 +1,14 @@
 import * as React from 'react';
+import "./style.css";
 
 export default function Navbar() {
+
+  const openForm= ()=>{
+    // document.getElementById('myForm').style.display='block';
+  }
+  const closeForm= ()=>{
+    // document.getElementById('myForm').style.display='none';
+  }
   return (
     <>
       <nav className="navbar bg-dark border-bottom border-body">
@@ -17,7 +25,7 @@ export default function Navbar() {
           <button
             className="btn btn-outline-success"
             type="button"
-            onclick="openForm()"
+            onclick={openForm()}
           >
             Add Task
           </button>
@@ -25,7 +33,7 @@ export default function Navbar() {
       </nav>
       <div className="form-popup" id="myForm">
         <form action="AddTask." className="form-container">
-          <h2 style="text-align: center;">Add Task</h2>
+          <h2 style={{ textAlign: 'center'}}>Add Task</h2>
           <label forHtml="title">
             <b>Title</b>
           </label>
@@ -39,7 +47,7 @@ export default function Navbar() {
             name="detail"
             required
           />
-          <label forName="Validity">
+          <label forHtml="Validity">
             <b>Valid Till</b>
           </label>
           &nbsp;&nbsp;
@@ -52,7 +60,7 @@ export default function Navbar() {
           <button type="submit" className="btn">
             Add
           </button>
-          <button type="button" className="btn cancel" onclick="closeForm()">
+          <button type="button" className="btn cancel" onclick={closeForm()}>
             Close
           </button>
         </form>
