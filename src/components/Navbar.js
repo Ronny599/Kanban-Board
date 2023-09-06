@@ -31,8 +31,8 @@ export default function Navbar() {
           </button>
         </form>
       </nav>
-      <div className="form-popup" id="myForm">
-        <form action="AddTask." className="form-container">
+      <div className="style.form-popup" id="myForm">
+        <form action="AddTask.js" className="form-container">
           <h2 style={{ textAlign: 'center'}}>Add Task</h2>
           <label forHtml="title">
             <b>Title</b>
