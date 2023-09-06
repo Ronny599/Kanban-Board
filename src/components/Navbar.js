@@ -4,7 +4,7 @@ import "./style.css";
 export default function Navbar() {
 
   const openForm= ()=>{
-    // document.getElementById('myForm').style.display='block';
+    document.getElementById('myForm').form-popup.style.display='block';
   }
   const closeForm= ()=>{
     // document.getElementById('myForm').style.display='none';
