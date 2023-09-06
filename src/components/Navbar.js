@@ -53,7 +53,6 @@ export default function Navbar() {
           &nbsp;&nbsp;
           <input
             type="date"
-            placeholder="Enter Date"
             name="validity"
             required
           />
