@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {Link} from "react-router-dom";
 import "./style.css";
 
 export default function Navbar() {
@@ -14,13 +15,13 @@ export default function Navbar() {
           </span>
         </div>
         <form className="container-fluid justify-content-start">
-          <button
+          <Link
             className="btn btn-outline-success"
             type="button"
-            onclick={openForm()}
+            To="/AddTask"
           >
             Add Task
-          </button>
+          </Link>
         </form>
       </nav>
     </>

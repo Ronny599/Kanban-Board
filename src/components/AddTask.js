@@ -1,7 +1,7 @@
 import * as React from 'react';
 import "./style.css";
 
-export default function Navbar() {
+export default function AddTask() {
 
   const openForm= ()=>{
     // document.getElementById('myForm').form-popup.style.display='block';
