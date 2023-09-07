@@ -5,9 +5,8 @@ import Footer from './components/Footer';
 import AddTask from './components/AddTask';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 export const App: FC<{ name: string }> = ({ name }) => {
@@ -15,16 +14,22 @@ export const App: FC<{ name: string }> = ({ name }) => {
       <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Content />
-          </Route>
-          <Route exact path="/AddTask">
-            <AddTask />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Content />}/>
+          <Route exact path="/AddTask" element={<AddTask />}/>
+        </Routes>
         <Footer />
       </Router>
       </>
   );
 };
+{/* <Router>
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/login" element={<Login/>}/>
+          <Route exact path="/recovery-password" element={<RecoveryPassword/>}/>
+          <Route path="*" element={<NotFound/>}/>
+        </Routes>
+      </Layout>
+    </Router> */}

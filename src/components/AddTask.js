@@ -3,12 +3,6 @@ import "./style.css";
 
 export default function AddTask() {
 
-  const openForm= ()=>{
-    // document.getElementById('myForm').form-popup.style.display='block';
-  }
-  const closeForm= ()=>{
-    // document.getElementById('myForm').style.display='none';
-  }
   return (
     <>
       <div className="style.form-popup" id="myForm">
@@ -39,9 +33,9 @@ export default function AddTask() {
           <button type="submit" className="btn">
             Add
           </button>
-          <button type="button" className="btn cancel" onclick={closeForm()}>
+          <Link type="button" className="btn cancel" onclick={closeForm()}>
             Close
-          </button>
+          </Link>
         </form>
       </div>
     </>
