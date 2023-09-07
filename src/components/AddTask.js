@@ -33,8 +33,8 @@ export default function AddTask() {
           <button type="submit" className="btn">
             Add
           </button>
-          <Link type="button" className="btn cancel" onclick={closeForm()}>
-            Close
+          <Link type="button" className="btn cancel" to="/Content.js">
+            Back
           </Link>
         </form>
       </div>

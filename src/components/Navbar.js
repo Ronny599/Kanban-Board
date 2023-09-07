@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {Link} from "react-router-dom";
-import "./style.css";
 
 export default function Navbar() {
   return (
@@ -15,10 +14,17 @@ export default function Navbar() {
           </span>
         </div>
         <form className="container-fluid justify-content-start">
+        <Link
+            className="btn btn-outline-success mx-2"
+            type="button"
+            To="/"
+          >
+            Home
+          </Link>
           <Link
             className="btn btn-outline-success"
             type="button"
-            To="/AddTask"
+            To="/addtask"
           >
             Add Task
           </Link>

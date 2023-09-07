@@ -15,8 +15,8 @@ export const App: FC<{ name: string }> = ({ name }) => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Content />}/>
-          <Route exact path="/AddTask" element={<AddTask />}/>
+          <Route index element={<Content />}/>
+          <Route path="addtask" element={<AddTask />}/>
         </Routes>
         <Footer />
       </Router>
