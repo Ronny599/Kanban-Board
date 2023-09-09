@@ -18,7 +18,7 @@ export default function AddTask() {
             <b>Description</b>
           </label>
           <input
-            type="password"
+            type="text"
             placeholder="Enter Description"
             name="detail"
             required
