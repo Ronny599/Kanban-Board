@@ -2,7 +2,7 @@ import * as React from 'react';
 import "./style.css";
 
 export default function AddTask() {
-
+  console.log("addtask");
   return (
     <>
       <div className="style.form-popup" id="myForm">
@@ -33,7 +33,7 @@ export default function AddTask() {
           <button type="submit" className="btn">
             Add
           </button>
-          <Link type="button" className="btn cancel" to="/Content.js">
+          <Link type="button" className="btn cancel" to="/">
             Back
           </Link>
         </form>
