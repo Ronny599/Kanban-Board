@@ -6,7 +6,7 @@ export default function AddTask() {
   return (
     <>
       <div className="style.form-popup" id="myForm">
-        <form action="/addtask" className="style.form-container">
+        <form action="/addtask" className="form-container">
           <h2 style={{ textAlign: 'center' }}>Add Task</h2>
           <label forHtml="title">
             <b>Title</b>
