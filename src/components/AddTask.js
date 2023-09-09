@@ -10,11 +10,11 @@ export default function AddTask() {
       <div className="style.form-popup" id="myForm">
         <form action="/addtask" className="form-container">
           <h2 style={{ textAlign: 'center' }}>Add Task</h2>
-          <label forHtml="title">
+          <label htmlFor="title">
             <b>Title</b>
           </label>
           <input type="text" placeholder="Enter Title" name="title" required />
-          <label forHtml="Description">
+          <label htmlFor="Description">
             <b>Description</b>
           </label>
           <input
@@ -23,7 +23,7 @@ export default function AddTask() {
             name="detail"
             required
           />
-          <label forHtml="Validity">
+          <label htmlFor="Validity">
             <b>Valid Till</b>
           </label>
           &nbsp;&nbsp;
