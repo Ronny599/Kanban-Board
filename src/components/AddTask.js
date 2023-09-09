@@ -1,13 +1,13 @@
 import * as React from 'react';
-import "./style.css";
+import {Link} from "react-router-dom";
+import './style.css';
 
 export default function AddTask() {
-  console.log("addtask");
   return (
     <>
       <div className="style.form-popup" id="myForm">
-        <form action="AddTask.js" className="form-container">
-          <h2 style={{ textAlign: 'center'}}>Add Task</h2>
+        <form action="/addtask" className="style.form-container">
+          <h2 style={{ textAlign: 'center' }}>Add Task</h2>
           <label forHtml="title">
             <b>Title</b>
           </label>
@@ -25,14 +25,10 @@ export default function AddTask() {
             <b>Valid Till</b>
           </label>
           &nbsp;&nbsp;
-          <input
-            type="date"
-            name="validity"
-            required
-          />
-          <button type="submit" className="btn">
+          <input type="date" name="validity" required />
+          <Link type="submit" className="btn" to="/">
             Add
-          </button>
+          </Link>
           <Link type="button" className="btn cancel" to="/">
             Back
           </Link>
