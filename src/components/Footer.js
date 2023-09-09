@@ -15,7 +15,7 @@ export default function Footer() {
             className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
           >
             <svg className="bi me-2" width="40" height="32">
-              <use xlink:href=""></use>
+              <use xlinkHref=""></use>
             </svg>
           </Link>
 

@@ -5,6 +5,8 @@ import './style.css';
 export default function AddTask() {
   return (
     <>
+    <h6 style={{ padding: '5px' }}>kumarronit599@gmail.com</h6>
+    <div className="text-bg-light p-3">
       <div className="style.form-popup" id="myForm">
         <form action="/addtask" className="form-container">
           <h2 style={{ textAlign: 'center' }}>Add Task</h2>
@@ -33,6 +35,7 @@ export default function AddTask() {
             Back
           </Link>
         </form>
+      </div>
       </div>
     </>
   );
