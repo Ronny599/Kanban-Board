@@ -17,14 +17,14 @@ export default function Navbar() {
         <Link
             className="btn btn-outline-success mx-2"
             type="button"
-            To="/"
+            to="/"
           >
             Home
           </Link>
           <Link
             className="btn btn-outline-success"
             type="button"
-            To="/addtask"
+            to="/addtask"
           >
             Add Task
           </Link>
