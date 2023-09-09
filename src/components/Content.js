@@ -1,12 +1,8 @@
 import * as React from 'react';
+import Link from 'react-router-dom';
 
 export default function Content() {
-  const openForm = () => {
-    // document.getElementById('myForm').style.display='block';
-  };
-  const closeForm = () => {
-    // document.getElementById('myForm').style.display='none';
-  };
+  
   return (
     <>
       <h6 style={{ padding: '5px' }}>kumarronit599@gmail.com</h6>
@@ -29,15 +25,15 @@ export default function Content() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" className="card-link">
+                  <Link to="/" className="card-link">
                     Details
-                  </a>
-                  <a href="#" className="card-link">
+                  </Link>
+                  <Link to="/" className="card-link">
                     Edit
-                  </a>
-                  <a href="#" className="card-link">
+                  </Link>
+                  <Link to="/" className="card-link">
                     Delete
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -57,15 +53,15 @@ export default function Content() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" className="card-link">
+                  <Link to="/" className="card-link">
                     Details
-                  </a>
-                  <a href="#" className="card-link">
+                  </Link>
+                  <Link to="/" className="card-link">
                     Edit
-                  </a>
-                  <a href="#" className="card-link">
+                  </Link>
+                  <Link to="/" className="card-link">
                     Delete
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -85,15 +81,15 @@ export default function Content() {
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" className="card-link">
+                  <Link to="/" className="card-link">
                     Details
-                  </a>
-                  <a href="#" className="card-link">
+                  </Link>
+                  <Link to="/" className="card-link">
                     Edit
-                  </a>
-                  <a href="#" className="card-link">
+                  </Link>
+                  <Link to="/" className="card-link">
                     Delete
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
